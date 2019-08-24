@@ -57,7 +57,7 @@ class MealItem extends StatelessWidget {
     Navigator.of(ctx)
         .pushNamed(MealDetailScreen.routeName, arguments: id)
         .then((result) {
-      if (result) {
+      if (result != '') {
         print(result);
         removeItem(result);
       }
